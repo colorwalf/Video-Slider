@@ -1,166 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Fullscreen Slider</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
-        <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
-        <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-		<noscript>
-			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
-		</noscript>
-    </head>
-    <body>
-        <style type="text/css">
-        	h2,h3,h4,h5{
-        		background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
-        		background: ;
-        		color: white;
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<section id="lab_video_slider">
+  <div class="container-fluid">
+    <div class="row">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+	.container #top 
+		
+	{
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+  color: white;
         		border-radius: 200px;
-        		width: 500px!important;
-        		height: 500px!important;
+        		width: 325px!important;
+        		height: 325px!important;
         		-moz-border-radius: 300px;
         		-webkit-border-radius: 300px;
-        		font-size: 3.5em!important;
-        		margin-top: 1.3em!important;
-        		padding-bottom: 1em!important;
-        	}
-        </style>
-        <div class="container demo-2">
-            <div id="slider" class="sl-slider-wrapper">
+  left: 550px;
+  -webkit-animation:top 6s ease infinite;
+  -moz-animation:top 6s ease infinite;
+  animation: top 6s ease infinite;
+  
+}
+@keyframes top {
+  0% {-webkit-transform:translate(0px,-400px) rotate(-360deg);opacity: 1;}
+  /*25% {-webkit-transform: rotate(180deg);}*/
+    50% {-webkit-transform:translate(0px,0px) rotate(360deg);opacity: 0.8;}
+     /*100% {-webkit-transform: rotate(0deg);}*/
 
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div><center>
-							<h2>Recognized Research Centre of Anna University ( CSE & ECE)</h2></center>
-							
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div><center>
-							<h2>Center       <br> for<br>    Excellence</h2>
-							</center>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div><center>
-							<h2>6th Place Among 516 Colleges in Anna University</h2>
-						</center>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-4"></div><center>
-							<h2>Accredited by NAAC & NBA Accredited Courses</h2>
-							</center>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-5"></div><center>
-							<h2>Think Placements. Think IFET<br><big>645</big><font style="size: 20px!important;"> Students Placed Out of 694</font></h2>
-							</center>
-						</div>
-					</div>
-				</div><!-- /sl-slider -->
 
-				<!-- <nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav> -->
+}
 
-			</div><!-- /slider-wrapper -->
 
-			
 
+
+.container #left {
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+  color: white;
+        		border-radius: 200px;
+        		width: 325px!important;
+        		height: 325px!important;
+        		-moz-border-radius: 300px;
+        		-webkit-border-radius: 300px;
+  position: absolute;
+  
+  left: 100px;
+  -webkit-animation:left 6s ease infinite;
+  -moz-animation:left 6s ease infinite;
+  animation: left 6s ease infinite;
+}
+
+@keyframes left {
+  0% {-webkit-transform: translate(0px, 0px) rotate(0deg); }	
+  50% {-webkit-transform:translate(400px,0px)  rotate(360deg); }
+}
+.container #right {
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+  color: white;
+        		border-radius: 200px;
+        		width: 325px!important;
+        		height: 325px!important;
+        		-moz-border-radius: 300px;
+        		-webkit-border-radius: 300px;
+  position: absolute;
+  
+  right: 90px;
+  -webkit-animation:right 6s ease infinite;
+  -moz-animation:right 6s ease infinite;
+  animation: right 6s ease infinite;
+}
+
+@keyframes right {
+	  0% {-webkit-transform: translate(400px, 0px) rotate(0deg); }	
+  50% {-webkit-transform: translate(-400px, 0px) rotate(-360deg);}
+}
+.container #bottom {
+
+  /* This timing applies on the way OUT */
+  transition-timing-function: ease-in;
+
+  /* Quick on the way out */
+  transition: 2s;
+
+  /* Hide thing by pushing it outside by default */
+  transform: translate(500px,500px);
+
+}
+</style>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div id="slide_one" class="swiper-slide">
+             <div id="lab_video_text_overlay">
+    <div class="container">
+    	<div id="top">
+      <h2 style="margin-top: 1em;">working</h2>
+      <p>working wnc molestie</p>
+      <a href="#" class="btn btn-default">View Our Work</a>
+      <a href="#" class="btn btn-warning">Learn About Us</a>
+</div>
+    </div>
+  </div>
+            
+            <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="img/working-with-espresso.jpg">
+              <source src="vid/working-with-espresso.mp4" type="video/mp4">
+             
+            </video>
+           
+          </div>
+
+          <div id="slide_two" class="swiper-slide">
+  <div id="lab_video_text_overlay">
+    <div class="container">
+    	<div id="left">
+      <h2 style="margin-top: 1em;">Lorum</h2>
+      <p>Lorem ipsum dolo</p>
+      <a href="#" class="btn btn-default">View Our Work</a>
+      <a href="#" class="btn btn-warning">Learn About Us</a>
+</div> 
+    </div>
+  </div>
+  <!-- end #lab_overlay -->
+
+            <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="img/lab-coding-screenshot.jpg">
+              
+        <source src="vid/lab-coding.mp4" type="video/mp4">
+
+            </video>
+          
+          </div>
+
+          <div id="slide_three" class="swiper-slide">
+                   <div id="lab_video_text_overlay">
+    <div class="container">
+    	<div id="right">
+      <h2 style="margin-top: 1em;">TypinNu </h2>
+      <p>Nunc molestie</p>
+      <a href="#" class="btn btn-default">View Our Work</a>
+      <a href="#" class="btn btn-warning">Learn About Us</a>
+</div>
+    </div>
+  </div>
+             <!-- VIDEO -->
+            <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="img/typing-numbers.jpg">
+              <source src="vid/typing-numbers.mp4" type="video/mp4">
+               
+            </video>
+            <!-- END VIDEO -->
+          </div> 
         </div>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-		<script type="text/javascript">	
-			$(function() {
-			
-				var Page = (function() {
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 
-					var $nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
+       <!-- Swiper JS -->
+      <script src="js/swiper.min.js"></script>
 
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
-
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
-			
-			});
-		</script>
-	</body>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </div>
+    <!-- end .row -->
+  </div>
+  <!-- end .container -->
+  </div>
+  <!-- end #section -->
+  </body>
 </html>
